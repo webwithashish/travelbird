@@ -19,34 +19,24 @@
         <title>Travel Bird</title>
     </head>
     <body>
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="navigation__btn"><span class="navigation__icon">&nbsp;</span></label>
+            <div class="navigation__background">&nbsp;</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span> About Travel Bird</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span> Explore</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span> Offers</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span> Login - Register</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
         <header class="header">
             <div class="header__logobox">
                 <!-- <img src="img/mount-logo.png" alt="logo" class="travel__logo" /> -->
                 <span class="header__brand">Travel Bird</span>
-            </div>
-            <div class="navigation">
-                <ul class="navlist">
-                    <li class="navitems currentpage">home</li>
-                    <li class="navitems">
-                        <a
-                            class="u-text-decoration-none"
-                            scr="#"
-                            >tours</a
-                        >
-                    </li>
-                    <li class="navitems">
-                        <a class="u-text-decoration-none" scr="#">explore</a>
-                    </li>
-                    <li class="navitems">
-                        <a class="u-text-decoration-none" scr="#">offers</a>
-                    </li>
-                    <li class="navitems">
-                        <a class="u-text-decoration-none" scr="#">login</a>
-                    </li>
-                    <li class="navitems">
-                        <a class="u-text-decoration-none" scr="#">contact</a>
-                    </li>
-                </ul>
             </div>
             <div class="header__text-box">
                 <h1 class="heading-primary">
@@ -214,7 +204,7 @@
                                         <div class="card__cta__price-value">
                                             30k
                                         </div>
-                                        <a href="#" class="btn btn--white"
+                                        <a href="#popup" class="btn btn--white"
                                             >Book Now!</a
                                         >
                                     </div>
@@ -256,7 +246,7 @@
                                         <div class="card__cta__price-value">
                                             55k
                                         </div>
-                                        <a href="#" class="btn btn--white"
+                                        <a href="#popup" class="btn btn--white"
                                             >Book Now!</a
                                         >
                                     </div>
@@ -298,7 +288,7 @@
                                         <div class="card__cta__price-value">
                                             70k
                                         </div>
-                                        <a href="#" class="btn btn--white"
+                                        <a href="#popup" class="btn btn--white"
                                             >Book Now!</a
                                         >
                                     </div>
@@ -311,6 +301,22 @@
                     <a href="https://webwithashish.github.io/webashish/" class="btn btn--perpule">Discover all tours</a>
                 </div>
             </section>
+            <div class="popup" id="popup">
+                <div class="popup__content">
+                    <div class="popup__left">
+                        <img src="img/travel-girl-img.jpg" alt="tour image" class="popup__img">
+                        <img src="img/nat-8.jpg" alt="tour image" class="popup__img">
+                    </div>
+                    <div class="popup__right">
+                        <a href="#tours" class="popup__close">X</a>
+                        <h2 class="heading-secondary ">start booking now</h2>
+                        <h3 class="heading-tertiary u-margin-bottom-small">more information about this tour</h3>
+                        <p class="popup__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci natus, animi possimus odit officiis quibusdam et repudiandae nobis sequi velit, porro dicta aliquam voluptatum ad fuga qui itaque voluptas earum ullam ducimus consectetur laboriosam! Voluptatum necessitatibus recusandae quod cupiditate. Quo ipsam distinctio enim neque nihil quidem corporis facilis itaque modi inventore expedita voluptatibus pariatur, sint incidunt vel optio explicabo veritatis, voluptates laudantium ea iure cupiditate unde. Odio, inventore officia delectus animi ullam corporis enim, totam id consequatur quasi adipisci. Fugiat numquam quis perspiciatis non quo, cumque tempore eligendi minima placeat reiciendis molestias, consequuntur deleniti iste officiis quasi magnam ex cum eveniet sunt beatae. Mollitia earum commodi eos ipsa quasi. Enim eligendi esse corrupti minima accusantium est corporis mollitia libero delectus!</p>
+                        <a href="#tours" class="btn btn__perpule">book now !</a>
+                    </div>
+
+                </div>
+            </div>
             <section class="section-stories">
                 <div class="bg-video">
                     -->
@@ -325,7 +331,7 @@
                     </h2>
                 </div>
                 <div class="row">
-                    <div class="story">
+                    <div class="story story__br1">
                         <figure class="story__shape">
                             <img
                                 src="img/nat-8.jpg"
@@ -355,7 +361,7 @@
                     </div>
                 </div>
                 <div class="row u-margin-bottom-large">
-                    <div class="story">
+                    <div class="story story__br2">
                         <figure class="story__shape">
                             <img
                                 src="img/nat-9.jpg"
